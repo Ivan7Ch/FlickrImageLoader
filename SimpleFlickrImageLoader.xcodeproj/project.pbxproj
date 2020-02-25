@@ -3,19 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D694249B1C01F7F2C2C94F4 /* Pods_SimpleFlickrImageLoader.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 752966A14EAF160F536B46DE /* Pods_SimpleFlickrImageLoader.framework */; };
 		F508D4FC24054F6E007B330F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508D4FB24054F6E007B330F /* AppDelegate.swift */; };
 		F508D4FE24054F6E007B330F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508D4FD24054F6E007B330F /* SceneDelegate.swift */; };
 		F508D50024054F6E007B330F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F508D4FF24054F6E007B330F /* ViewController.swift */; };
 		F508D50324054F6E007B330F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F508D50124054F6E007B330F /* Main.storyboard */; };
 		F508D50524054F6F007B330F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F508D50424054F6F007B330F /* Assets.xcassets */; };
 		F508D50824054F6F007B330F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F508D50624054F6F007B330F /* LaunchScreen.storyboard */; };
+		F557EBBA2405532E00ADEFF4 /* RealmManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F557EBB92405532E00ADEFF4 /* RealmManager.swift */; };
+		F5778B3E240552390037214D /* ImagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5778B3D240552390037214D /* ImagesViewController.swift */; };
+		F5778B402405526A0037214D /* ImageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5778B3F2405526A0037214D /* ImageLoader.swift */; };
+		F5778B42240552870037214D /* ImageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5778B41240552870037214D /* ImageTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3ACA24E352FD4B35091986C3 /* Pods-SimpleFlickrImageLoader.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleFlickrImageLoader.release.xcconfig"; path = "Target Support Files/Pods-SimpleFlickrImageLoader/Pods-SimpleFlickrImageLoader.release.xcconfig"; sourceTree = "<group>"; };
+		752966A14EAF160F536B46DE /* Pods_SimpleFlickrImageLoader.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SimpleFlickrImageLoader.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5620B7F76275EE8AB9737E0 /* Pods-SimpleFlickrImageLoader.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SimpleFlickrImageLoader.debug.xcconfig"; path = "Target Support Files/Pods-SimpleFlickrImageLoader/Pods-SimpleFlickrImageLoader.debug.xcconfig"; sourceTree = "<group>"; };
 		F508D4F824054F6E007B330F /* SimpleFlickrImageLoader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SimpleFlickrImageLoader.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F508D4FB24054F6E007B330F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F508D4FD24054F6E007B330F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +32,10 @@
 		F508D50424054F6F007B330F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F508D50724054F6F007B330F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F508D50924054F6F007B330F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F557EBB92405532E00ADEFF4 /* RealmManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmManager.swift; sourceTree = "<group>"; };
+		F5778B3D240552390037214D /* ImagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesViewController.swift; sourceTree = "<group>"; };
+		F5778B3F2405526A0037214D /* ImageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageLoader.swift; sourceTree = "<group>"; };
+		F5778B41240552870037214D /* ImageTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D694249B1C01F7F2C2C94F4 /* Pods_SimpleFlickrImageLoader.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		278812A76D77D1E88185377E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				752966A14EAF160F536B46DE /* Pods_SimpleFlickrImageLoader.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99F68E48AE564B173D44CE2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B5620B7F76275EE8AB9737E0 /* Pods-SimpleFlickrImageLoader.debug.xcconfig */,
+				3ACA24E352FD4B35091986C3 /* Pods-SimpleFlickrImageLoader.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		F508D4EF24054F6E007B330F = {
 			isa = PBXGroup;
 			children = (
 				F508D4FA24054F6E007B330F /* SimpleFlickrImageLoader */,
 				F508D4F924054F6E007B330F /* Products */,
+				99F68E48AE564B173D44CE2D /* Pods */,
+				278812A76D77D1E88185377E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +95,10 @@
 				F508D50424054F6F007B330F /* Assets.xcassets */,
 				F508D50624054F6F007B330F /* LaunchScreen.storyboard */,
 				F508D50924054F6F007B330F /* Info.plist */,
+				F5778B3D240552390037214D /* ImagesViewController.swift */,
+				F5778B3F2405526A0037214D /* ImageLoader.swift */,
+				F5778B41240552870037214D /* ImageTableViewCell.swift */,
+				F557EBB92405532E00ADEFF4 /* RealmManager.swift */,
 			);
 			path = SimpleFlickrImageLoader;
 			sourceTree = "<group>";
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F508D50C24054F6F007B330F /* Build configuration list for PBXNativeTarget "SimpleFlickrImageLoader" */;
 			buildPhases = (
+				F5455604FAC584CA1965857D /* [CP] Check Pods Manifest.lock */,
 				F508D4F424054F6E007B330F /* Sources */,
 				F508D4F524054F6E007B330F /* Frameworks */,
 				F508D4F624054F6E007B330F /* Resources */,
+				95C49D16FA20152ADAFF96EE /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,6 +171,48 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		95C49D16FA20152ADAFF96EE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleFlickrImageLoader/Pods-SimpleFlickrImageLoader-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-SimpleFlickrImageLoader/Pods-SimpleFlickrImageLoader-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SimpleFlickrImageLoader/Pods-SimpleFlickrImageLoader-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F5455604FAC584CA1965857D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SimpleFlickrImageLoader-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F508D4F424054F6E007B330F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -140,6 +220,10 @@
 			files = (
 				F508D50024054F6E007B330F /* ViewController.swift in Sources */,
 				F508D4FC24054F6E007B330F /* AppDelegate.swift in Sources */,
+				F5778B402405526A0037214D /* ImageLoader.swift in Sources */,
+				F5778B42240552870037214D /* ImageTableViewCell.swift in Sources */,
+				F5778B3E240552390037214D /* ImagesViewController.swift in Sources */,
+				F557EBBA2405532E00ADEFF4 /* RealmManager.swift in Sources */,
 				F508D4FE24054F6E007B330F /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +366,7 @@
 		};
 		F508D50D24054F6F007B330F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5620B7F76275EE8AB9737E0 /* Pods-SimpleFlickrImageLoader.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +385,7 @@
 		};
 		F508D50E24054F6F007B330F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3ACA24E352FD4B35091986C3 /* Pods-SimpleFlickrImageLoader.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
